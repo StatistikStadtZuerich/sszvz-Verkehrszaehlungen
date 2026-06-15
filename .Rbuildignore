@@ -1,0 +1,8 @@
+^renv$
+^renv\.lock$
+^sszvz\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^data-raw$
+^dev$
+.gitlab-ci.yml

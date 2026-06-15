@@ -1,0 +1,50 @@
+Package: sszvz
+Title: Package to read data, wrangle, analyse and plot data on Verkehrszählungen from the city of Zurich
+Version: 0.1.2
+Authors@R: 
+    c(
+    person("Sara",
+      "Hänzi",
+      role = c("aut", "cre"),
+      email = "sara.haenzi@zuerich.ch"),
+    person("Statistik Stadt Zürich",
+      email = "statistik@zuerich.ch",
+      role = c("cph", "fnd")
+    ))
+Description: The package provides functions to read parquet files on the counts of cars and bikes at various points in the city of Zurich; other functions then wrangle, aggregate and plot these data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    arrow,
+    data.table,
+    dplyr,
+    forcats,
+    ggiraph,
+    ggpattern,
+    ggplot2,
+    glue,
+    hms,
+    htmltools,
+    janitor,
+    jsonlite,
+    lubridate,
+    mapgl,
+    purrr,
+    scales,
+    sf,
+    stringr,
+    tidyr,
+    zoo,
+    zuericolors (>= 1.0.0),
+    zueritheme (>= 1.0.1)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Config/testthat/parallel: true
+Depends: 
+    R (>= 4.1)
+Remotes: 
+    github::StatistikStadtZuerich/zuericolors,
+    github::StatistikStadtZuerich/zueritheme
